@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Arxalis Support</title>
+  <style>
+    :root {
+      --bg: #f6f7f7;
+      --surface: #ffffff;
+      --text: #17201f;
+      --muted: #667371;
+      --accent: #147a73;
+      --border: rgba(20, 40, 38, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1111;
+        --surface: #181c1b;
+        --text: #edf4f3;
+        --muted: #a1adaa;
+        --accent: #4fb5aa;
+        --border: rgba(255,255,255,0.09);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 16px 50px rgba(0,0,0,0.06);
+    }
+    h1 { font-size: clamp(34px, 6vw, 54px); margin: 0 0 8px; letter-spacing: -0.035em; }
+    h2 { margin-top: 34px; font-size: 21px; }
+    p, li { font-size: 16px; }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .lead { font-size: 19px; color: var(--muted); }
+    a { color: var(--accent); }
+    footer { color: var(--muted); text-align: center; padding: 22px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="eyebrow">Arxalis</div>
+      <h1>Support</h1>
+
+      <p class="lead">
+        Need help with Arxalis? This page covers the main support topics for the app.
+      </p>
+
+      <h2>Common topics</h2>
+      <ul>
+        <li>Creating and unlocking your vault</li>
+        <li>Face ID and automatic locking</li>
+        <li>AutoFill setup</li>
+        <li>Adding or importing passwords</li>
+        <li>Two-factor authentication (TOTP)</li>
+        <li>Encrypted backups and restore</li>
+        <li>Recovery Key</li>
+        <li>CSV import and export</li>
+      </ul>
+
+      <h2>Important recovery note</h2>
+      <p>
+        Arxalis is local-first and does not operate a server that stores your vault
+        password or vault contents. Keep your master password and Recovery Key safe.
+        Support cannot recover a lost master password without a valid recovery method.
+      </p>
+
+      <h2>Privacy</h2>
+      <p>
+        For information about how Arxalis handles data, read the
+        <a href="/privacy">Privacy Policy</a>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For support requests, bug reports, or questions, contact the developer using
+        the support contact listed on the App Store page.
+      </p>
+    </div>
+
+    <footer>© 2026 Arxalis</footer>
+  </main>
+</body>
+</html>
