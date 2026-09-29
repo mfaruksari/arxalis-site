@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Arxalis Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f7f7;
+      --surface: #ffffff;
+      --text: #17201f;
+      --muted: #667371;
+      --accent: #147a73;
+      --border: rgba(20, 40, 38, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1111;
+        --surface: #181c1b;
+        --text: #edf4f3;
+        --muted: #a1adaa;
+        --accent: #4fb5aa;
+        --border: rgba(255,255,255,0.09);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(24px, 5vw, 52px);
+      box-shadow: 0 16px 50px rgba(0,0,0,0.06);
+    }
+    h1 { font-size: clamp(34px, 6vw, 54px); margin: 0 0 8px; letter-spacing: -0.035em; }
+    h2 { margin-top: 34px; font-size: 21px; }
+    p, li { font-size: 16px; }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .meta { color: var(--muted); margin-top: 0; }
+    .lead { font-size: 19px; color: var(--muted); }
+    a { color: var(--accent); }
+    footer { color: var(--muted); text-align: center; padding: 22px 0; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="eyebrow">Arxalis</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: September 29, 2026</p>
+
+      <p class="lead">
+        Arxalis is designed as a local-first password and secure information manager.
+        Your vault is stored encrypted on your device, and Arxalis does not operate a
+        cloud service that receives or stores your vault contents.
+      </p>
+
+      <h2>Information stored in Arxalis</h2>
+      <p>
+        Arxalis can store passwords, login information, secure notes, identity
+        information, payment card information, Wi-Fi credentials, tags, and
+        two-factor authentication (TOTP) secrets. This vault data is stored locally
+        on your device in encrypted form.
+      </p>
+
+      <h2>No account, advertising, or tracking</h2>
+      <p>
+        Arxalis does not require an Arxalis account. We do not use advertising SDKs,
+        behavioral tracking, or third-party analytics SDKs, and we do not sell your
+        personal data.
+      </p>
+
+      <h2>Face ID and biometric authentication</h2>
+      <p>
+        If you enable biometric unlock, authentication is performed by iOS using
+        Apple system frameworks. Arxalis does not receive, read, or store your Face ID
+        or other biometric templates.
+      </p>
+
+      <h2>Camera access</h2>
+      <p>
+        Camera access is used only when you choose to scan a QR code, such as when
+        adding a two-factor authentication account. Camera content is processed for
+        the requested scan and is not uploaded to an Arxalis server.
+      </p>
+
+      <h2>Breached-password checks</h2>
+      <p>
+        When you use the breached-password check, Arxalis hashes the password locally
+        on your device. Only a short prefix of the resulting SHA-1 hash is sent to the
+        Have I Been Pwned Pwned Passwords service using its k-anonymity protocol.
+        Your complete password and complete password hash are not sent to that service.
+      </p>
+
+      <h2>Website icons (favicons)</h2>
+      <p>
+        Arxalis may connect to websites associated with URLs you save in order to
+        retrieve website icons. These requests may contact the saved website, its
+        parent domain, or an icon/CDN resource referenced by the website. As with
+        ordinary internet requests, the remote service may receive standard network
+        information such as your IP address. Arxalis does not send your vault password
+        or stored account password as part of favicon requests.
+      </p>
+
+      <h2>AutoFill</h2>
+      <p>
+        Arxalis supports iOS AutoFill through its credential provider extension.
+        Information needed for AutoFill is handled using Apple-provided app and
+        Keychain mechanisms on the device. Arxalis does not provide a remote server
+        for storing your AutoFill credentials.
+      </p>
+
+      <h2>Backups, imports, exports, and sharing</h2>
+      <p>
+        Arxalis can create encrypted backups and can import or export supported data.
+        These files are created under your control. If you choose to save or share a
+        file through iCloud Drive, another cloud provider, email, messaging, or another
+        service, that service's privacy practices apply to the copy you choose to send
+        or store there.
+      </p>
+
+      <h2>Third-party services</h2>
+      <p>
+        Certain optional features may communicate with third-party internet services,
+        including Have I Been Pwned for breached-password checks and websites/CDNs for
+        favicon retrieval. Those services operate under their own terms and privacy
+        policies.
+      </p>
+
+      <h2>Children's privacy</h2>
+      <p>
+        Arxalis is a general-purpose utility and is not designed to collect personal
+        information from children. Arxalis does not operate a user account system or
+        cloud database for vault contents.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        This Privacy Policy may be updated when Arxalis features or data practices
+        change. The effective date at the top of this page will be updated when
+        material changes are made.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions or support, visit
+        <a href="/support">arxalis.mfsari.com/support</a>.
+      </p>
+    </div>
+
+    <footer>© 2026 Arxalis</footer>
+  </main>
+</body>
+</html>
